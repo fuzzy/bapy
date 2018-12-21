@@ -1,0 +1,32 @@
+---
+metadata:
+  name: mistress
+  vers: 0.0.1
+  base_url: /
+
+routes:
+  - name: main
+    base_url: /main/
+    methods:
+      - get
+      - put
+      - post
+    custom:
+      routes:
+        - path: /
+          name: root_redirect
+          methods:
+            - GET
+  - name: upload
+    base_url: /upload/
+    methods:
+      - get
+      - put
+      - post
+  - name: status
+    base_url: /status/
+    methods:
+      - get
+      - put
+      - post
+

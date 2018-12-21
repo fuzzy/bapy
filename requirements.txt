@@ -1,0 +1,4 @@
+pyyaml
+jinja2
+bottle==0.12.7
+bottleCBV
